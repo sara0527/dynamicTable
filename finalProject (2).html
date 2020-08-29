@@ -1,0 +1,30 @@
+<h3><a target="_blank" href="https://www.gyrocode.com/articles/jquery-datatables-how-to-navigate-rows-with-keytable-plugin/">jQuery DataTables: How to select columns</a> <small>Using checkboxes</small></h3>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body onload="loadData()" >
+
+    <input id= "search" type="text" />
+    <button id= "searchBtn" >search</button>
+    <button id= "load" >loadBooks</button>
+    <input id="name" onkeyup="searchDynamicData(id)" aria-placeholder="חפש לפי שם">
+
+    <input type="text" id="filterInput" onkeyup="filterDataTable()" placeholder="Search for names.." title="Type in a name">
+     <br>
+    <input onchange="changeHandler()" type="radio" name="active" id="active" value= "true">פעיל
+   <br>
+    <input  onchange="changeHandler()"  type="radio" name="active"  id="noActive"  value= "false"   >לא פעיל
+
+    <!-- onchange="filterTableByElement()" onclick="filterTableByElement()" -->
+    <table  id="myTable" >  </table>
+</body>
+</html>
+<script src="classBook.js"></script>
+<script src="finalProject.js"></script>
+
+
